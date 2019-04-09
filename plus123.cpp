@@ -60,7 +60,7 @@ int main() {
         int tempSize = way.size();
         for(int i=0; i<tempSize; i++) {
             temp = way[i];
-            if(temp[2]==1){
+            if(temp.size()>2 && temp[2]==1){
                 temp.erase(temp.begin());
                 temp.erase(temp.begin());
                 temp.erase(temp.begin());
@@ -70,7 +70,7 @@ int main() {
         }
         for(int i=tempSize; i<way.size(); i++) {
             temp = way[i];
-            if(temp[2]==1) {
+            if(temp.size()>2 && temp[2]==1) {
                 temp.erase(temp.begin());
                 temp.erase(temp.begin());
                 temp.erase(temp.begin());
